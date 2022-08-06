@@ -1,0 +1,35 @@
+body {
+	margin: 0px 0px 0px 15px;
+	background-color: antiquewhite;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+	background-color: antiquewhite;
+	border: 10px antiquewhite solid;
+}
+
+.li {
+	border: 5px dotted #cccccc;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 20px;
+}
+
+button {
+	background-color: greenyellow;
+}
+
+button:hover {
+	background-color: green;
+}
+
+button:active {
+	background-color: blue;
+}
+
+.hh {
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
