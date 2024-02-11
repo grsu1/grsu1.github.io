@@ -35,6 +35,7 @@ h1, h2 {
 }
 
 /* 为.button中的button设置样式，定义其外观 */
+/*
 .button button {
   display: block;
   width: 100%;
@@ -74,7 +75,7 @@ hr {
   background-color: #ccc;
   margin: 20px 0;
 }
-
+*/
 /* Button Styles */
 .button {
   position: relative;
