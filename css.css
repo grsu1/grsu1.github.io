@@ -1,86 +1,76 @@
 /* 基本样式重置 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* 设置body的背景色和字体 */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
+  font-family: 'Arial', sans-serif;
 }
 
+/* 为.container设置样式，使其居中显示 */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 使容器占满视口高度 */
 }
 
-/* 标题样式 */
+/* 为.box1设置样式，定义其宽度和背景色 */
+.box1 {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 为h1, h2设置样式，定义其字体大小和颜色 */
 h1, h2 {
-    text-align: center;
+  text-align: center;
+  color: #333;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* 按钮样式 */
+/* 为.button中的button设置样式，定义其外观 */
 .button button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* 动画效果 */
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF; /* 蓝色 */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 
+/* 鼠标悬停时的样式 */
 .button button:hover {
-    background-color: #45a049; /* Green darkened on hover */
+  background-color: #0056b3;
 }
 
-/* 其他样式 */
-#v5 {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+/* 为.hh中的button设置特殊样式 */
+.hh button {
+  background-color: #ddd; /* 灰色 */
+  cursor: not-allowed; /* 表示不可点击 */
 }
 
-#v16 {
-    margin-top: 20px;
+/* 为img设置样式，使其响应式 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 水平居中 */
 }
 
-#v19 button {
-    background-color: #ddd;
-    color: #666;
-    cursor: default; /* 不可点击 */
-}
-
-#v19 button:hover {
-    background-color: #ccc;
-}
-
-/* 响应式样式 */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
+/* 为hr设置样式，定义其颜色、高度和边框 */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
 }
