@@ -74,3 +74,110 @@ hr {
   background-color: #ccc;
   margin: 20px 0;
 }
+
+/* Button Styles */
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+.button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  transform: translateY(2px);
+}
+
+/* Button Colors */
+.button-primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-secondary {
+  background-color: #00BCD4;
+  color: white;
+}
+
+.button-danger {
+  background-color: #F44336;
+  color: white;
+}
+
+.button-warning {
+  background-color: #FFC107;
+  color: black;
+}
+
+.button-info {
+  background-color: #2196F3;
+  color: white;
+}
+
+.button-success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-dark {
+  background-color: #333;
+  color: white;
+}
+
+/* Button Animations */
+.button-pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button-slide-left {
+  animation: slideLeft 1s infinite;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Add more styles and animations as needed */
